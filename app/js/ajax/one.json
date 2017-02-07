@@ -1,0 +1,14 @@
+{
+	"item": {
+		"office": "Milan",
+		"description": "Corporate Headquarters",
+		"address": "Via G. da Procida, 24",
+		"city": "20149 Milan, Italy",
+		"phone": "+39 02 89 800 1",
+		"images": [
+			"http://www.objectway.com/images/frontend-test/milan-01.jpg",
+			"http://www.objectway.com/images/frontend-test/milan-02.jpg",
+			"http://www.objectway.com/images/frontend-test/milan-03.jpg"
+		]
+	}
+}

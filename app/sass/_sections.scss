@@ -1,0 +1,226 @@
+
+.section-container {
+	.section-name {
+		font-family: $primary-font;
+		font-weight: 700;
+		text-align: left;
+		font-size: 48px;
+		color: #494F56;
+		letter-spacing: 0;
+	}
+	.section-group {
+
+		.section-title {
+			font-family: $primary-font;
+			font-size: 32px;
+			color: #C0C6CB;
+			letter-spacing: 0;
+		}
+		.section-description {
+			font-family: $secondary-font;
+			font-size: 16px;
+			color: #494F56;
+			letter-spacing: 0;
+			line-height: 30px;
+		}
+	}
+}
+
+section#about,
+section#business,
+section#partners {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+section#home,
+section#about {
+
+	height: 580px;
+	float: none;
+}
+
+section#about {
+	.section-description {
+		margin-bottom: 45px;
+	}
+}
+
+section#business {
+	height: 650px;
+	@include bgGradient( #2C3E50, #405B75);
+	color: $white-color;
+	.section-name,
+	.section-title,
+	.section-description {
+		color: $white-color;
+	}
+	.section-description {
+		margin-top: 10px;
+		margin-bottom: 40px;
+	}
+}
+
+section#partners {
+	height: auto;
+	margin-bottom: 50px;
+	.button-azure{
+		@include button($button-secondary , 140px, 35px, 12px);
+		margin-top: 48px;
+		position: relative;
+		text-indent: -18px;
+	}
+	.button-azure:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 15px;
+    bottom: 40%;
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid $white-color;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+	}
+	.button-azure-down:after {
+		@extend .button-azure:after;
+		border-top: 5px solid rgb(249, 247, 247) !important;
+		border-bottom: none !important;
+
+	}
+	.hide-partners-toggle{
+		display: none;
+	}
+
+}
+
+section#contacts {
+	height: 1200px;
+	.tab-container{
+		height: 390px;
+		border-bottom: 1px solid #E6EBED;
+
+		.tab-box {
+		  color: #333;
+		  display: block;
+		  font-family: $primary-font;
+		  margin: auto;
+		  position: relative;
+		  
+		  input[name="sections"] {
+		    display:none;
+		  } 
+		  h2{
+				margin-top: 0;
+		  }
+		  section {
+		    display: block;
+
+		    .tab-group {
+		    	border: 1px solid #E6EBED;
+					&.no-border{
+						border-bottom: none;
+						border-top: none;
+					}
+		    }
+
+		    label {
+		      background-color: #F5F7FA;
+		      cursor: pointer;
+		      display: block;
+		      font-size: 1.2em;
+		      font-weight: bold;
+		      padding: 15px 20px;
+		      position: relative;
+		      z-index: 100;
+		      height: 20px;
+		      opacity: 0.2;
+		      span{
+		      	float: left;
+		      }
+		    }
+		    article {
+		      display: none;
+		      border: 1px solid #E6EBED;
+		      left: 41.5%;
+		      padding: 0 0 0 21px;
+		      position: absolute;
+		      top: 0;
+		      height: 304px;
+		      overflow: hidden;
+		      cursor: default;
+		      img{
+		      	width: 100%;
+		      }
+		    }
+		  }
+		  input[name="sections"]:checked {
+		    + label {
+		      background-color: #F0F2F5;
+		      color: #494F56;
+		      opacity: 1;
+		    }
+		    ~ article {
+		      display: block;
+		    }
+		  }
+		  .arrow-right{
+				width: 20px;
+		    height: 20px;
+		    display: block;
+		    background-position: center;
+		    background-size: 100%;
+		    background-repeat: no-repeat;
+		    background-image: url(../images/chevron-right.svg);
+		    float: right;
+		  }
+		  .show-data {
+		  	padding-top: 20px;
+				
+		  	ul:first-child h1 {
+		  		font-weight: 700;
+		  	}
+		  	ul:nth-child(2) h1{
+		  		margin-bottom: 20px;
+		  	}
+		  	h1{
+		  		font-family: $primary-font;
+			    color: #405b75;
+			    font-weight: 400;
+			    text-align: left;
+			    font-size: 20px;
+			    line-height: 25px;
+			    margin:0;
+		  	}
+		  }
+		}
+	}
+	.form-container {
+		float: none;
+		.section-name-contacts {
+			margin-top: 60px;
+			font-family: $primary-font;
+	    font-weight: 700;
+	    text-align: center;
+	    font-size: 48px;
+	    color: #494F56;
+	    margin-bottom: 20px;
+		}
+		.abstract-contacts {
+			font-family: $secondary-font;
+			text-align: center;
+			font-size: 16px;
+			line-height: 30px;
+			margin-bottom: 50px;
+		}
+		.button-azure{
+			@include button($button-secondary , 200px, 50px, 18px);
+			margin-top: 15px;
+			position: relative;
+			border: none;
+			line-height: 40px;
+		}
+		
+	}
+}

@@ -1,0 +1,171 @@
+@import "susy/susy";
+// HEADER STYLES
+
+nav {
+	margin-top: 30px;
+	padding-right: 110px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	background: transparent;
+
+	#navlist {
+		text-align: right;
+
+		#nav-logo {
+			float: left;
+    	padding-top: 12px;
+    	-webkit-transition: opacity 0.5s ease-out 0.1s;
+    	-moz-transition: opacity 0.5s ease-out 0.1s;
+    	-o-transition: opacity 0.5s ease-out 0.1s;
+    	transition: opacity 0.5s ease-out 0.1s;
+    	position:relative;
+    	z-index: 0;
+			img {
+				width: 120px;
+			}
+		}
+
+		li {
+			display: inline-block;
+			margin-left: 2em;
+		
+			a {
+				font-size: 16px;
+				color: #FFFFFF;
+				letter-spacing: 0;
+				text-shadow: 0 0 8px rgba(0,0,0,0.70);
+				font-weight: 700;
+				display: block;
+				font-family: $primary-font;
+				color: #ffffff;
+				text-transform: uppercase;
+				padding: 10px 5px;
+
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+		li.active {
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+section#home {
+
+	header {
+		.logo {
+			position: relative;
+	    top: 40px;
+	    z-index: 999;
+	    img {
+	    	width: 230px;
+	    	position: absolute;
+	    }
+		}
+
+		.header-text{
+			position: absolute;
+			margin-top: 194px;
+			.main-title {
+		    font-family: $primary-font;
+		    font-weight: 500;
+		    font-size: 48px;
+		    color: #FFFFFF;
+		    letter-spacing: -0.67px;
+		    text-shadow: 0 0 8px rgba(0,0,0,0.70);
+			}
+
+			.abstract{
+				font-family: $secondary-font;
+				font-size: 21px;
+				color: #FFFFFF;
+				letter-spacing: 0;
+				line-height: 28px;
+				text-shadow: 0 0 8px rgba(0,0,0,0.70);
+				width: 520px;
+			}
+			.button-green{
+				@include button($button-primary , 183px, 50px, 18px);
+				margin-top: 48px;
+			}
+		}
+
+		#carousel {
+			@include span(12 of 12);
+			position: relative;
+		}
+
+		#slides {
+		  overflow: hidden;
+		  position: relative;
+		  width: 100%;
+		  height: 580px;
+		  ul {
+		    
+		    left: 0;
+		    top: 0;
+		    list-style: none;
+		    margin: 0;
+		    padding: 0;
+		    width: 100%;
+		  }
+		  li {
+		    width: 100%;
+		    height: 580px;
+		    float: left;
+		    img {
+		    	position: relative;
+		    	bottom: 0;
+		      border: 0;
+					width: auto;
+					height: 100%;
+		    }
+		  }
+		}
+
+		#buttons {
+			position: absolute;
+	    width: 100%;
+
+			.arrows {
+		    display: block;
+		    color: transparent;
+		    outline: 0;
+		    position: relative;
+		    z-index: 999;
+		    top: 264px;
+		    height: 64px;
+		    width: 70px;
+		    background-size: 60%;
+		    background-position: center;
+		    background-repeat: no-repeat;
+			}
+
+			a {
+				
+			  &#prev {
+			  	@extend .arrows;
+			    background-image: url(../images/chevron-left-circle.svg);
+			    float: left;
+
+			  }
+			  &#next {
+			  	@extend .arrows;
+			    background-image: url(../images/chevron-right-circle.svg);
+			    float: right;
+			  }
+			}
+		}
+
+		.clear {
+		  clear: both;
+		}
+	}
+}

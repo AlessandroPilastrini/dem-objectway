@@ -1,0 +1,80 @@
+// BASIC STYLES
+
+body {
+	position: relative;
+	background-color: $white-color;;
+	color: $text-color;
+	font-size: 100%;
+	font-family: $primary-font;
+	font-weight: 400;
+	top: 0;
+}
+
+.hide { display: none; }
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+.no-margin { margin: 0px; padding: 0px; }
+.float-left { float: left;}
+.float-right { float: right;}
+
+.bold, b {
+	font-weight: bold;
+}
+.normal {
+	font-weight: normal;
+}
+
+a, a:visited { 
+	text-decoration: none !important;
+	color: $grey-color;
+}
+a:hover {
+	color: $text-color;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: $primary-font;
+	color: $title-color;
+	font-size: 3em;
+	margin-top: 20px;
+	font-weight: bold;
+	text-align: right;
+}
+
+h2 {
+	font-family: $primary-font;
+	color: $title-color;
+	font-size: 2.3em;
+	margin-top: 20px;
+
+}
+
+h3 {
+	font-family: $primary-font;
+	color: $title-color;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 2em;
+}
+
+h4 {
+	color: $title-color;
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+h5 {
+	color: $title-color;
+	font-size: 1.2em;
+	margin-top: 20px;
+}
+
+p {
+	color: $text-color;
+	font-size: .85em;
+	margin-top: 20px;
+	font-weight: 300;
+}

@@ -1,0 +1,14 @@
+{
+	"item": {
+		"office": "Brussels",
+		"description": "Regional Headquarters",
+		"address": "Zandvoortstraat C45",
+		"city": "B-2800 Mechelen - Belgium",
+		"phone": "+32 015 29 68 00",
+		"images": [
+			"http://www.objectway.com/images/frontend-test/mechelen-01.jpg",
+			"http://www.objectway.com/images/frontend-test/mechelen-02.jpg",
+			"http://www.objectway.com/images/frontend-test/mechelen-03.jpg"
+		]
+	}
+}

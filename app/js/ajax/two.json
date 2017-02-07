@@ -1,0 +1,14 @@
+{
+	"item": {
+		"office": "London",
+		"description": "Regional Headquarters",
+		"address": "25 Canada Square - Canary Wharf",
+		"city": "London E14 5LQ, UK",
+		"phone": "+44 020 7071 3000",
+		"images": [
+			"http://www.objectway.com/images/frontend-test/london-01.jpg",
+			"http://www.objectway.com/images/frontend-test/london-02.jpg",
+			"http://www.objectway.com/images/frontend-test/london-03.jpg"
+		]
+	}
+}

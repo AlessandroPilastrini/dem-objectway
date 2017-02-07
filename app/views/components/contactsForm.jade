@@ -1,0 +1,27 @@
+h1.section-name-contacts CONTACTS
+p.abstract-contacts For more information about the services we offer, and how we can work with you, please provide us with the following items of information.
+
+form(id="target")
+
+	div.form-group-one.float-left
+		label(for='fullname') FULL NAME *
+		input#fullname(name='fullname', type='text')
+		span#help-name
+
+	div.form-group-one.float-right
+		label(for='phone') PHONE NUMBER
+		input#phone(name='phone', type='text', class="phone_number")
+		span#help-phone
+
+	div.form-group-two
+		label(for='email') E-MAIL ADDRESS *
+		input#email(name='email', type="email")
+		span#help-email
+
+	div.form-group-two
+		label(for='message') YOUR MESSAGE *
+		textarea#message(name='message', type="textarea")
+		span#help-message
+
+	div.form-group-two
+		input.button-azure(type='submit')

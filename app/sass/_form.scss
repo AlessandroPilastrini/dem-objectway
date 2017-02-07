@@ -1,0 +1,38 @@
+.form-container {
+	
+	label {
+		font-size: 13px;
+		color: #606972;
+	}
+
+	input[type=text],
+	input[type=email],
+	textarea {
+		width: 100%;
+	  border-top: 1px solid #ccc;
+	  border-left: 1px solid #ccc;
+	  border-right: 1px solid #eee;
+	  border-bottom: 1px solid #eee;
+	  height: 30px;
+	  font-size: 20px;
+	  box-shadow: inset 1px 1px 5px 0 rgb(234, 234, 234);
+	  margin-top: 15px;
+	  padding-left: 10px;
+	  margin-bottom: 4px;
+	}
+
+	textarea {
+		height: 100px;
+		padding-top: 10px;
+	}
+
+	input[type=text]:focus,
+	input[type=email]:focus,
+	textarea:focus {
+	  outline: 0;
+	  border-color: #4697e4;
+	}
+	span {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,58 @@
+//partnersBox
+
+.section-partners-card {
+	margin-top: 60px;
+	.partners-box {
+		padding-right: 30px;
+		.partner-logo {
+			width: 50%;
+			height: 50px;
+			background-color: #F5F7FA;
+			.partners-logo-common {
+				width: 100%;
+		    height: 50px;
+		    display: block;
+		    background-position: center;
+		    background-size: 75%;
+		    background-repeat: no-repeat;
+			}
+			.partner-logo-microsoft { 
+				@extend .partners-logo-common;
+				background-image: url(../images/microsoft.png);
+			}
+			.partner-logo-oracle { 
+				@extend .partners-logo-common;
+				background-image: url(../images/oracle.png);
+			}
+			.partner-logo-ibm { 
+				@extend .partners-logo-common;
+				background-size: 30%;
+				background-image: url(../images/ibm.png);
+			}
+			.partner-logo-computer-as { 
+				@extend .partners-logo-common;
+				background-size: 25%;
+				background-image: url(../images/computer-associates.png);
+			}
+			.partner-logo-tibco {
+				@extend .partners-logo-common;
+				background-size: 55%;
+				background-image: url(../images/tibco.png);
+			}
+		}
+		.partner-name {
+			font-family: $primary-font;
+			font-weight: 700;
+			font-size: 21px;
+			color: #2C3E50;
+		}
+
+		.partner-abstract {
+			font-family: $secondary-font;
+			font-size: 14px;
+			color: #494F56;
+			letter-spacing: 0;
+			line-height: 24px;
+		}
+	}
+}

@@ -1,0 +1,80 @@
+// GRID
+
+// N.B. tutti i susy-breakpoint(...) 
+// riguardano la parte responsive che purtroppo non sono riuscito a completare nei tempi
+// previsti per il test, se siete su portatili molto piccoli( vp di 800px) 
+// potreste non vedere la navbar, che ho fatto scomparire.
+
+// SUSY IMPORT
+@import "susy/susy";
+
+$susy: (
+  columns: 12,
+  gutters: 0,
+  math: fluid,
+  output: isolate,
+  gutter-position: inside,
+);
+
+body { @include container(100%); }
+
+header { @include span(12); }
+
+nav { @include span(12); 
+		@include susy-breakpoint(320px 820px) {
+		display: none;
+	}
+}
+
+section { @include span(12); }
+
+footer { @include span(12); }
+
+
+.section-container,
+.section-partners-card,
+.hide-partners-container,
+.footer-container { @include container(85%); }
+
+.form-container { @include container(65%); }
+
+.section-name { @include span(4 of 12); }
+
+.section-name-contacts { @include span(12); }
+
+.section-group { @include span(8 of 12); 
+	@include susy-breakpoint(320px 820px) {
+		@include span(12);
+	}
+}
+
+.partners-box { @include span(4 of 12); }
+
+.hide-partners { @include span(2 of 12 ) float: right; }
+
+.tab-group { @include span(4 of 12); }
+
+.addresses-tab-box { width: 56.66667%; }
+
+.show-img, .show-data { @include span(6 of 12); }
+
+.form-container { @include span(12); 
+
+	@include susy-breakpoint(320px 820px) {
+		@include container(100%);
+	}
+}
+
+.form-group-one { @include span(6 of 12); padding: 15px; 
+		@include susy-breakpoint(320px 820px) {
+		@include span(12);
+		padding: 0;
+	}
+}
+
+.form-group-two { @include span(12); padding: 15px;
+		@include susy-breakpoint(320px 820px) {
+		padding: 0;
+	}
+}
+

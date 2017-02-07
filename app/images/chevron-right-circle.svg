@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron-right-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="chevron-right-circle" sketch:type="MSArtboardGroup" fill="#fff">
+            <path d="M100,50 C100,22.384375 77.615625,0 50,0 C22.384375,0 0,22.384375 0,50 C0,77.615625 22.384375,100 50,100 C77.615625,100 100,77.615625 100,50 L100,50 Z M6,49.75 C6,25.625 25.721875,6 49.846875,6 C73.971875,6 93.596875,25.625 93.596875,49.75 C93.596875,73.875 73.971875,93.5 49.846875,93.5 C25.721875,93.5 6,73.875 6,49.75 L6,49.75 Z M54.2702703,30 L59,34.6666667 L43.4594595,50 L59,65.3333333 L54.2702703,70 L34,50 L54.2702703,30 Z" id="Shape" sketch:type="MSShapeGroup" transform="translate(50.000000, 50.000000) scale(-1, 1) translate(-50.000000, -50.000000) "></path>
+        </g>
+    </g>
+</svg>

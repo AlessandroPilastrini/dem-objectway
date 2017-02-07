@@ -1,0 +1,46 @@
+//global.scss
+
+//RESETS
+//Eric Meyer HTML5 resets & button reset
+
+@import 'reset';
+
+button, a, a:active, button:focus { outline: 0; }
+
+// VARIABLES
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Bitter', serif;
+
+$white-color: #ffffff;
+$text-color: #000000;
+$title-color: #000000;
+$grey-color: #666666; 
+$button-primary: #64AA00;
+$button-secondary: #46A3E5;
+
+// GRID
+@import 'grid';
+
+// BASIC STYLES
+@import 'basic';
+
+// MIXINS
+@import 'mixins';
+
+// HEADER STYLES
+@import 'header';
+
+// COMPONENTS
+@import 'components';
+
+// SECTIONS STYLES
+@import 'sections';
+
+// FORM
+@import 'form';
+
+// FOOTER STYLES
+@import 'footer';
+
+// COMPATIBILITY & RESPONSIVE IMPORTS
+@import 'ie';

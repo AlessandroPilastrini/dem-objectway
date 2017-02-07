@@ -1,0 +1,22 @@
+doctype html
+
+//[if !IE]><!
+html(lang="en" class="notIE")
+	//<![endif]
+	head
+		title #{config.site_title}
+		meta(name="Description" content=" #{config.site_desc}")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="Content-Type", content="text/html;charset=utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		link(rel="shortcut icon" type="image/x-icon" href="http://www.objectway.com/images/fav.ico")
+		link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet")
+		<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i" rel="stylesheet">
+		link(rel="stylesheet", href="./css/site.min.css")
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		|	<!--[if lt IE 7 ]><html class="ie6" lang="en"><![endif]-->
+		|	<!--[if IE 7 ]><html class="ie7" lang="en"><![endif]-->
+		| <!--[if lte IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"><![endif]-->
+		| <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+
+		
